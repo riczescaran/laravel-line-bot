@@ -1,0 +1,31 @@
+{
+    "name": "riczescaran/laravel-line-bot",
+    "version": "1.0",
+    "description": "LINE Message API for Laravel",
+    "license": "MIT",
+    "keywords": ["line", "line api", "line api laravel", "laravel line"],
+    "authors": [
+        {
+            "name": "ricardo escaran",
+            "email": "riczescaran@gmail.com"
+        }
+    ],
+    "require": {
+        "linecorp/line-bot-sdk": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Riczescaran\\LaravelLineBot\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Riczescaran\\LaravelLineBot\\LineServiceProvider"
+            ],
+            "aliases": {
+                "LineBot": "Riczescaran\\LaravelLineBot\\Line"
+            }
+        }
+    }
+}
